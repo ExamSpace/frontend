@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Manrope", sans-serif;
+  }
+  
+  .section1 {
+    background: white;
+    height: 700px;
+  }
+  .section2 {
+    background: white;
+    height: 700px;
+  }
+  .section3 {
+    background: white;
+    height: 700px;
+  }
+  .section4 {
+    background: white;
+    height: 700px;
+  }
+  .section5 {
+    background: white;
+    height: 700px;
+  }
+  .section6 {
+    background: white;
+    height: 700px;
+  }
+  .section7 {
+    background: white;
+    height: 700px;
+  }
+  
+  /**************************************************************
+                          /* Navbar styles
+  ***************************************************************/
+  nav {
+    height: 2.5rem;
+    width: 100%;
+    position: relative;
+    background-color: #020266;
+  }
+  
+  nav .navbar__hamburger-btn {
+    color: white;
+    float: right;
+    margin-right: 2rem;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    height: 100%;
+  }
+
+  #check {
+    display: none;
+  }
+  
+  .navbar__logo img{
+    font-family: "Manrope", sans-serif;
+    text-transform: capitalize;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    height: 3.5rem;
+  }
+  
+  nav ul {
+    float: right;
+    margin-right: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 100%;
+  }
+  
+  nav ul li {
+    display: inline-flex;
+    margin: 0 1rem;
+    height: 100%;
+    align-items: center;
+  }
+  
+  nav ul li a {
+    color:white;
+    font-size: 1em;
+    font-family: "Questrial", sans-serif;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    transition: 0.2s;
+    color: rgb(167, 167, 167);
+  }
+  
+  @media (max-width: 768px) {
+    nav #check:checked ~ ul {
+      left: 0;
+    }
+  
+    nav .navbar__hamburger-btn {
+      display: flex;
+    }
+    nav ul {
+      position: relative;
+      display: inline-block;
+      height: auto;
+      width: 100%;
+      /* height: 100vh; */
+      background: white;
+      /* z-index: 1; */
+      left: -100%;
+      transition: all 0.8s;
+      margin-right: 0px;
+      padding-left: 0px;
+      border-bottom: 1px solid rgba(0,0,0,.1) ;
+    }
+  
+    nav ul li {
+      display: block;
+      margin: 1rem 0;
+      line-height: 30px;
+      width: 100%;
+      height: 20px;
+    }
+  
+    nav ul li a {
+      margin: .25rem 1.5em;
+      font-size: 90%;
+      color: rgba(0,0,0,.65);
+    }
+  
+    nav ul li a:hover,
+    a.active {
+      color:rgba(0,0,0,.85);
+      transition: 0.2s;
+    }
+  }
+
+  .greetings {
+    display: inline-block;
+    text-align: right;
+    width: 100%;
+    position: relative;
+    height: 40px;
+  }
+  .vertical-center {
+    display: inline-flex;
+    float: right;
+    height: inherit;
+    position: relative;
+    height: 100%;
+    align-items: center;
+    /* align-items: center; */
+  }
+  .vertical-center h4 {
+    font-weight: 400;
+    color: rgba(0,0,0,.65);
+  }
+  .vertical-center img {
+    margin: .5rem .5rem;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    /* border: 1px solid rgba(0,0,0,.2); */
+    box-shadow: 2px 5px 18px rgba(0, 0, 0, 0.3);
+  }
+
+  .search{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    /* height: 100%; */
+    /* left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+  }
+
+  @media (max-width: 768px) { 
+    .search {
+      width: 70%;
+    }
+  }
+
+  .searchbox{
+    transition: border .2s linear;
+    font-size: 12px;
+    width: 80%;
+    background: #f5f8fa;
+    color: #000;
+    padding: 8px 32px 8px 12px;
+    height: 10px;
+    border: 1px solid #e6ecf0;
+    border-radius: 50px;
+    outline: none;
+  }
+  .searchbox:focus{
+    transition: border .2s linear;
+    border: 2px solid orange;
+  }
+
+  .searchbtn{
+    position: absolute;
+    font-size: 20px;
+    color: #66757f;
+    background-color: transparent;
+    border:none;
+    right: 0%;
+    top: 0px;
+    outline: none;
+    padding: 4px;
+  }
+
+  @media (max-width: 768px) { 
+    .searchbtn{
+      right: 5%;
+    }
+  }
