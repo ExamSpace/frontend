@@ -30,4 +30,71 @@
 .upcoming_exam_wrapper .content-card img {
   width: 80px;
 }
+
+.padding-0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media (max-width: 576px) {
+  .padding-0 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.info-section .info-header {
+  border-color: rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.info-section .info-header h6 {
+  margin: 5px 0;
+  color: #020266;
+}
+
+.info-section p {
+  margin-right: 1rem;
+  overflow: hidden;
+  font-size: 8pt;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.info-section ul li {
+  color: rgba(0, 0, 0, 0.65);
+  list-style-type: circle;
+  line-height: 1;
+}
+
+.info-section ul li a {
+  color: rgba(0, 0, 0, 0.65);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 8pt;
+}
+
+.info-section ul li a:hover {
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.inline-elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+.inline-elements p {
+  padding-left: 1rem;
+  margin: 0;
+}
+
+.inline-elements a {
+  padding-left: .2rem;
+  font-size: 8pt;
+  color: rgba(0, 0, 0, 0.65);
+  text-decoration: none;
+}
 /*# sourceMappingURL=style.css.map */
