@@ -1,19 +1,83 @@
-.hearitcard-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 250px;
-  background-color: rgba(231, 198, 9, 0.842);
+.grid-container {
+  background: #efefef;
 }
 
-.hearitcard-wrapper::-webkit-scrollbar {
-  display: none;
-}
-
-.hearitcard-wrapper .card {
-  position: relative;
-  height: 180px;
-  width: 300px;
+@supports (display: grid) {
+  .grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: auto 1fr auto;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: "header header header" "title title footer" "main main main";
+  }
+  @media screen and (max-width: 500px) {
+    .grid-container {
+      -ms-grid-columns: 1fr;
+          grid-template-columns: 1fr;
+      -ms-grid-rows: 0.3fr 1fr auto 1fr;
+          grid-template-rows: 0.3fr 1fr auto 1fr;
+          grid-template-areas: "header" "title" "main" "footer";
+    }
+  }
+  .grid-item {
+    padding: 3.5em 1em;
+  }
+  .main {
+    background-color: white;
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: main;
+    padding: 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  .main::-webkit-scrollbar {
+    display: none;
+  }
+  .items {
+    position: relative;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    will-change: transform;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    cursor: pointer;
+  }
+  .items::-webkit-scrollbar {
+    display: none;
+  }
+  .items.active {
+    background: rgba(255, 255, 255, 0.3);
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .item {
+    display: inline-block;
+    background: #f5f5f5b4;
+    min-height: 220px;
+    min-width: 330px;
+    margin: 2em 1em;
+    border-radius: 5%;
+    padding: 1rem 1rem;
+  }
+  @media screen and (max-width: 500px) {
+    .item {
+      min-height: 200px;
+      min-width: 200px;
+    }
+  }
 }
 /*# sourceMappingURL=style.css.map */
