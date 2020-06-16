@@ -1,0 +1,25 @@
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+  }
+
+.card {
+    border-top: none;
+    border-right: none;
+}
+
+.card-footer {
+    opacity: 0%;
+}
+
+.showcase-heading {
+    color: #020266;
+    border-bottom: 10px solid red;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-image: linear-gradient(to right, #040467, white) 1 stretch;
+}
+.service-heading {
+    color: black;
+    text-align: center;
+}
