@@ -1,0 +1,108 @@
+body {
+  font-family: Arial;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=date], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 20%;
+  background-color:#020266;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-left: 2px;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div.container {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+#radioGroup .wrap {
+  display: inline-block;
+}
+#radioGroup label {
+  display: block;
+  text-align: center;
+  margin: 0 0.2em;
+}
+#radioGroup input[type="radio"] {
+  display: block;
+  margin: 0.5em auto;
+}
+
+#radioGroup {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#fname, #dob, #mob , #email{
+  width: 20%;
+  border-radius: 15px;
+  height: 20px;
+}
+
+.alert {
+  color: #ff0303;
+  margin-top: -20px;
+}
+
+.alert::after {
+  content: "\2022";
+  color: #01ff00;
+  font-size: 50px;
+  position: relative;
+  top: 12px;
+  left: 7px;
+}
+
+[type="date"] {
+  background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  margin-right: -12px;
+}
+
+.container {
+  margin-top: -25px;
+}
+
+.header {
+  margin-left: 15px;
+}
+
+
+
+
+
+
+

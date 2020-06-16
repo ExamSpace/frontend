@@ -1,0 +1,29 @@
+@mixin vertical_padding{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.upcoming_exam_section {
+    h4 {
+        @include vertical_padding();
+        padding-bottom: 0;
+        color: #020266;
+    }
+}
+.upcoming_exam_wrapper {
+    @include vertical_padding();
+
+    .content-card {
+        @include flexCenter();
+        flex-direction: column;
+        margin: 20px 0;
+
+        img {
+            width: 80px;
+        }
+    }
+}
