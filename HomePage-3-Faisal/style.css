@@ -5,6 +5,16 @@
 .card-header img{
   width: 20px;
 }
-@media only screen and (max-width: 768px) {
-    
+.card-body{
+  margin-top: -20px;
+  font-size:.8rem;
+}
+.card{
+  width: 400px;
+  height: 250px;
+  border: none;
+}
+.card-header{
+  display: flex;
+  border: none;
 }
