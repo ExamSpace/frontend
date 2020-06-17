@@ -1,0 +1,46 @@
+.number-section {
+  .card {
+    // height: 150px;
+    width: 250px;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    margin: 0 auto;
+    margin-top: 1rem;
+    img {
+      width: auto;
+      height: 60px;
+      margin: 0 auto;
+      padding-top: 15px;
+    }
+    .card-text {
+      font-size: 1em;
+      margin: 0 0;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .number-section {
+    .card {
+      width: 200px;
+      .card-text {
+        font-size: 0.8em;
+      }
+    }
+  }
+}
+
+.number-section {
+  .heading-1 {
+    margin-left: 1.5rem;
+    margin-bottom: 0;
+    color: rgba(0, 0, 0, 0.6);
+  }
+  .heading-2 {
+    margin-left: 1.5rem;
+    margin-bottom: 0;
+    font-size: 1.2em;
+    color: rgb(23, 93, 197);
+  }
+}
