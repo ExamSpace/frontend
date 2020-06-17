@@ -1,31 +1,10 @@
-body{
-  margin: 0;
-  padding: 0;
+.card-header h4{
+  font-size: 20px;
+  margin-left: 10px;
 }
-
-.column{
-  margin-left: 100px;
-}
-.row h4{
-  font-size: 15px;
-}
-.row img{
+.card-header img{
   width: 20px;
-  height: 20px;
-  position: relative;
-  left: -20px;
 }
-.row p{
-  color: #a7a7a7;
-}
-.container-fluid{
-  margin-left: 50px;
-}
-@media only screen and (max-width: 1200px) {
-      .column{
-        margin-left: 15px;
-      }
-      .container-fluid h1{
-        font-size: 25px;
-      }
+@media only screen and (max-width: 768px) {
+    
 }
