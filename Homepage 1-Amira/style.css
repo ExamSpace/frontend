@@ -1,0 +1,30 @@
+:root{
+  --primary-color: #999999;
+  --secondary-color: #121270;
+}
+
+.nav-item{
+  margin-left: 100px;
+}
+.row h4{
+  font-size: 15px;
+}
+.nav-link{
+  color: var(--primary-color);
+  font-size: 0.8rem;
+}
+.nav-link:hover{
+  color: var(--secondary-color);
+  border-bottom: 1px solid var(--secondary-color);
+}
+.row p{
+  color: var(--primary-color);
+}
+.nav-item img{
+  width: 20px;
+  height: 20px;
+  margin-top: 8px;
+}
+.nav-item{
+  display: flex;
+}
