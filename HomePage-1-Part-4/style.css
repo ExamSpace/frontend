@@ -1,31 +1,18 @@
 :root{
-  --card-color: #e5e5ef;
-  --hover-color: #ffffff;
+  --card-background-color: #e5e5ef;
 }
 
-.card-img img{
-  width: 400px;
-  position: relative;
-  bottom: 100px;
-  left: 100px;
-  transform: translateX(-40px);
+.img{
+  width: 100px;
+}
+.img-2{
+  margin: 30px 0 0 0;
+  width: 150px;
+  height: 120px;
 }
 .card{
-  width: 60%;
-  height: 50%;
-  background-color: var(--card-color);
-  border: none;
+  width: 540px;
+  background-color: var(--card-background-color);
   border-radius: 20px;
-}
-.container-fluid{
-        margin: 100px 0 0 100px;
-}
-.card-body a{
-  font-size: 13px;
-  font-weight: bold;
-  text-decoration: none;
-}
-.card-body a:hover, a:hover::after{
-  content: ">";
-  color: var(--hover-color);
+  border: none;
 }
