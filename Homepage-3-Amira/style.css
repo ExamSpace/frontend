@@ -1,0 +1,27 @@
+.bg-no-overlay {
+    background: url("img/bg1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    color: #000000;
+    height: 500px;
+    display: flex;
+	flex-direction: column;
+	max-width: 100%;
+}
+
+.text1 {
+    margin-top: 60px;
+    padding-left: 15px;
+    color: #000000;
+}
+
+.text2 {
+    color: #9c9c9d;
+    
+}
+
+.btn1 {
+    margin-top: 60px;
+    
+}
