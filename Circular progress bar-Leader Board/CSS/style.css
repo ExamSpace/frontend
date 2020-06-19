@@ -1,0 +1,40 @@
+#skills{
+  margin-top: 30px;
+}
+/*Progressbar-Area */
+.circles{
+  color: #d9534f;
+  /* padding: 10px; */
+}
+.circle {
+  width: 180px;
+  height: 180px;
+  margin: 6px 6px 20px 20x;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  line-height: 1.2;
+  /* padding: 24px 22px 12px 20px; */
+}
+
+.circle canvas {
+  vertical-align: top;
+  width: 120px;
+  height: 120px;
+}
+
+.circle strong {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 30px;
+}
+.h4{
+	font-size: 18px;
+    text-transform: uppercase
+}
+
+/*Progressbar-Area End */
