@@ -28,3 +28,9 @@ body{
   border-radius: 1rem;
   margin-bottom: -8px;
 }
+
+@media only screen and (max-width: 540px) {
+      body{
+        margin-left: 25%;
+      }
+}
