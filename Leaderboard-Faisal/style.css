@@ -1,0 +1,47 @@
+.card-1, .card-2{
+  width: 8rem;
+  height: 6rem;
+  border-radius: 1rem;
+  color: white;
+}
+.card-1{
+  background-color: #ed1e79;
+}
+.card-2{
+  background-color: #00aeef;
+}
+.card-text{
+  font-size: .7rem;
+}
+.card-body h3, p{
+  margin-top: -8px;
+}
+hr{
+  width: 8rem;
+  margin-left: -21px;
+}
+.small-text{
+  font-size: .8rem;
+  color: #808080;
+}
+.name-text{
+  font-weight: bold;
+}
+.anchor img{
+  width: 4rem;
+}
+.col_1{
+  margin-top: 6px;
+}
+.col_1 a{
+  text-decoration: none;
+}
+.col_1 a:hover{
+  box-shadow: 5px 5px #e5e5e5;
+  transition-duration: .5s;
+}
+@media only screen and (max-width: 150px) {
+    .card-body-2 p{
+      font-size: .7rem;
+    }
+}
